@@ -4,7 +4,7 @@
 ### Testing
 First check that you are able to compile and pass the tests:
 ```
-gradle test
+gradle test 
 ```
 
 For test report and code coverage: 
