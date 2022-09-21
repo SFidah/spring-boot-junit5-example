@@ -36,7 +36,7 @@ public class BookServiceTest {
         bookService = new BookService(bookRepositoryMock, new ModelMapper());
     }
 
-    @Test
+    
     @DisplayName("given Book id, when get Book, then Book is retrieved")
     void givenBookId_whenGetBook_ThenBookRetrieved() {
 
@@ -62,7 +62,7 @@ public class BookServiceTest {
         assertEquals(bookDto1.getId(), book1.getId());
     }
 
-    @Test
+    
     @DisplayName("given Book id, when get non existing Book, then exception is thrown")
     void givenBookId_whenGetNonExistingBook_ThenExceptionThrown() {
 
@@ -78,7 +78,7 @@ public class BookServiceTest {
         assertEquals(errorMsg, throwException.getMessage());
     }
 
-    @Test
+   
     @DisplayName("when list Book, then Books are retrieved")
     void whenListBooks_ThenBooksRetrieved() {
 
@@ -102,7 +102,7 @@ public class BookServiceTest {
         assertEquals(book1.getId(), books.get(0).getId());
     }
 
-    @Test
+    
     @DisplayName("given Book data, when create new Book, then Book id is returned")
     void givenBookData_whenCreateBook_ThenBookIdReturned() {
 
@@ -126,7 +126,7 @@ public class BookServiceTest {
         assertEquals(book1.getId(), bookId1);
     }
 
-    @Test
+    
     @DisplayName("given Book incomplete data, when create new Book, then exception is thrown")
     void givenBookIncompleteData_whenCreateBook_ThenExceptionIsThrown() {
 
